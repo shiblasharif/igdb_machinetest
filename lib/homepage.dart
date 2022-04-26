@@ -19,7 +19,7 @@ class _HomepageState extends State<Homepage> {
       backgroundColor: Color.fromARGB(255, 36, 34, 34),
       body: _pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        iconSize: 25,
+        iconSize: 30,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         selectedItemColor: Colors.white,
