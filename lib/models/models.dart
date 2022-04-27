@@ -1,10 +1,5 @@
 import 'package:http/http.dart' as http;
 
-// Map data = {
-//   'fields': 'name',
-// };
-// String body = json.encode(data);
-
 Future<http.Response> responseData() async {
   http.Response? response =
       await http.post(Uri.parse("https://api.igdb.com/v4/games"),

@@ -51,7 +51,7 @@ class _ImagesState extends State<Images> {
                                       Radius.circular(6)),
                                   image: DecorationImage(
                                     image: NetworkImage(
-                                      '//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.jpg' 
+                                      '//images.igdb.com/igdb/image/upload/t_thumb/mnljdjtrh44x4snmierh.jpg'  
                                           
                                     ),
                                     fit: BoxFit.cover,

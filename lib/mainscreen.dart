@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:machinetest/images.dart';
+import 'package:machinetest/models/game.dart';
 import 'package:machinetest/models/models.dart';
 
 class MainScreen extends StatefulWidget {
@@ -11,6 +12,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  Future<Games>? images;
+
   @override
   void initState() {
     responseData();
@@ -82,109 +85,129 @@ class _MainScreenState extends State<MainScreen> {
                   fontWeight: FontWeight.bold),
             ),
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0, right: 15),
-                  child: Stack(
-                    children: [
-                      Column(
+          FutureBuilder<Games>(
+            future: images,
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {}
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 20.0, right: 15),
+                      child: Stack(
                         children: [
-                          Container(
-                            height: 200,
-                            width: 280,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20)),
-                            child: Align(
-                              alignment: Alignment.bottomCenter,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.only(
-                                    bottomRight: Radius.circular(15),
-                                    bottomLeft: Radius.circular(15)),
-                                child: Container(
-                                  height: 50,
-                                  color: Colors.grey,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(15.0),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "FarCry 6",
-                                          style: TextStyle(color: Colors.white),
+                          Column(
+                            children: [
+                              Container(
+                                height: 200,
+                                width: 280,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://images.igdb.com/igdb/image/upload/t_cover_big/dfgkfivjrhcksyymh9vw.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                child: Align(
+                                  alignment: Alignment.bottomCenter,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.only(
+                                        bottomRight: Radius.circular(15),
+                                        bottomLeft: Radius.circular(15)),
+                                    child: Container(
+                                      height: 50,
+                                      color: Colors.grey,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(15.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "FarCry 6",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            Icon(
+                                              Icons.favorite_border_outlined,
+                                              color: Colors.deepPurple.shade700,
+                                            )
+                                          ],
                                         ),
-                                        Icon(
-                                          Icons.favorite_border_outlined,
-                                          color: Colors.deepPurple.shade700,
-                                        )
-                                      ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
                         ],
                       ),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Stack(
-                    children: [
-                      Column(
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Stack(
                         children: [
-                          Container(
-                            height: 200,
-                            width: 280,
-                            decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20)),
-                            child: Align(
-                              alignment: Alignment.bottomCenter,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.only(
-                                    bottomRight: Radius.circular(15),
-                                    bottomLeft: Radius.circular(15)),
-                                child: Container(
-                                  height: 50,
-                                  color: Colors.grey,
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(15.0),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          "FarCry 6",
-                                          style: TextStyle(color: Colors.white),
+                          Column(
+                            children: [
+                              Container(
+                                height: 200,
+                                width: 280,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius: BorderRadius.circular(20),
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                        "https://images.igdb.com/igdb/image/upload/t_cover_big/mnljdjtrh44x4snmierh.jpg"),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                child: Align(
+                                  alignment: Alignment.bottomCenter,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.only(
+                                        bottomRight: Radius.circular(15),
+                                        bottomLeft: Radius.circular(15)),
+                                    child: Container(
+                                      height: 50,
+                                      color: Colors.grey,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(15.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "FarCry 6",
+                                              style: TextStyle(
+                                                  color: Colors.white),
+                                            ),
+                                            Icon(
+                                              Icons.favorite_border_outlined,
+                                              color: Colors.deepPurple.shade700,
+                                            )
+                                          ],
                                         ),
-                                        Icon(
-                                          Icons.favorite_border_outlined,
-                                          color: Colors.deepPurple.shade700,
-                                        )
-                                      ],
+                                      ),
                                     ),
                                   ),
                                 ),
                               ),
-                            ),
+                            ],
                           ),
                         ],
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              );
+            },
           ),
           Divider(
             color: Colors.grey,
@@ -470,8 +493,14 @@ class _MainScreenState extends State<MainScreen> {
                             height: 250,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20)),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://images.igdb.com/igdb/image/upload/t_cover_big/em1y2ugcwy2myuhvb9db.jpg"),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
                             child: Align(
                               alignment: Alignment.bottomCenter,
                               child: ClipRRect(
@@ -739,8 +768,14 @@ class _MainScreenState extends State<MainScreen> {
                             height: 250,
                             width: double.infinity,
                             decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(20)),
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://images.igdb.com/igdb/image/upload/t_cover_big/yektasaxw6l4ejte7ljb.jpg"),
+                                fit: BoxFit.fill,
+                              ),
+                            ),
                             child: Align(
                               alignment: Alignment.bottomCenter,
                               child: ClipRRect(
@@ -1026,8 +1061,14 @@ class _MainScreenState extends State<MainScreen> {
                           height: 250,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(20)),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iao.jpg"),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
                           child: Align(
                             alignment: Alignment.bottomCenter,
                             child: ClipRRect(
@@ -1290,8 +1331,14 @@ class _MainScreenState extends State<MainScreen> {
                           height: 250,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(20)),
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(20),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://images.igdb.com/igdb/image/upload/t_cover_big/yektasaxw6l4ejte7ljb.jpg"),
+                              fit: BoxFit.fill,
+                            ),
+                          ),
                           child: Align(
                             alignment: Alignment.bottomCenter,
                             child: ClipRRect(
