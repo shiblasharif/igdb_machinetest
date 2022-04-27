@@ -12,7 +12,7 @@ Future<http.Response> responseData() async {
             "Client-ID": "mtuu57oa72k6ddfq4q2gkakvnjxfn8",
             "Authorization": "Bearer knrmvj3awkcm4lkndi1lqvbe3ctlzg"
           },
-          body: 'fields name,cover.*;');
+          body: 'fields cover.*;');
   print(response.body);
   return response;
 }
