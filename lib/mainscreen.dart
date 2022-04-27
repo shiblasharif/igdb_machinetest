@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:machinetest/images.dart';
 import 'package:machinetest/models/models.dart';
 
 class MainScreen extends StatefulWidget {
@@ -10,11 +11,12 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  // @override
-  // void initState() {
-  //   responseData().then((value) => print(value.body));
-  //   super.initState();
-  // }
+  @override
+  void initState() {
+    responseData();
+    super.initState();
+  }
+
   bool selected = false;
 
   @override

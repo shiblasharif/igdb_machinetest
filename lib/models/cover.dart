@@ -1,11 +1,11 @@
-// class Cover {
-//   final String imageId;
+class Cover {
+  final String url;
 
-//   Cover({required this.imageId});
+  Cover({required this.url});
 
-//   factory Cover.fromJson(Map<String, dynamic> json) {
-//     return Cover(
-//       imageId: json['image_id'],
-//     );
-//   }
-// }
+  factory Cover.fromJson(Map<String, dynamic> json) {
+    return Cover(
+      url: json['url'],
+    );
+  }
+}
