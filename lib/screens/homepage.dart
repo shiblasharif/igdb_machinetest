@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:machinetest/mainscreen.dart';
+import 'package:machinetest/screens/mainscreen.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
@@ -16,7 +16,7 @@ class _HomepageState extends State<Homepage> {
       const MainScreen(),
     ];
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 36, 34, 34),
+      backgroundColor: const Color.fromARGB(255, 36, 34, 34),
       body: _pages[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         iconSize: 30,

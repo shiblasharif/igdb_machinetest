@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:machinetest/images.dart';
 import 'package:machinetest/models/game.dart';
 import 'package:machinetest/models/models.dart';
 
@@ -37,18 +36,18 @@ class _MainScreenState extends State<MainScreen> {
               width: 50,
               decoration: BoxDecoration(
                 color: const Color(0xff7c94b6),
-                image: DecorationImage(
+                image: const DecorationImage(
                   image: AssetImage("assets/images/profile.webp"),
                   fit: BoxFit.cover,
                 ),
-                borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                borderRadius: const BorderRadius.all(Radius.circular(30.0)),
                 border: Border.all(
                   color: Colors.deepPurple.shade700,
                   width: 2.0,
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 15,
             ),
             const Text(
@@ -71,7 +70,7 @@ class _MainScreenState extends State<MainScreen> {
             color: Colors.deepPurple.shade700,
           ),
         ],
-        shape: Border(bottom: BorderSide(color: Colors.grey, width: 0.9)),
+        shape: const Border(bottom: BorderSide(color: Colors.grey, width: 0.9)),
       ),
       body: ListView(
         children: [
@@ -105,7 +104,7 @@ class _MainScreenState extends State<MainScreen> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                     image: NetworkImage(
                                         "https://images.igdb.com/igdb/image/upload/t_cover_big/dfgkfivjrhcksyymh9vw.jpg"),
                                     fit: BoxFit.cover,
@@ -114,7 +113,7 @@ class _MainScreenState extends State<MainScreen> {
                                 child: Align(
                                   alignment: Alignment.bottomCenter,
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                         bottomRight: Radius.circular(15),
                                         bottomLeft: Radius.circular(15)),
                                     child: Container(
@@ -126,7 +125,7 @@ class _MainScreenState extends State<MainScreen> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text(
+                                            const Text(
                                               "FarCry 6",
                                               style: TextStyle(
                                                   color: Colors.white),
@@ -147,7 +146,7 @@ class _MainScreenState extends State<MainScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Padding(
@@ -162,7 +161,7 @@ class _MainScreenState extends State<MainScreen> {
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(20),
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                     image: NetworkImage(
                                         "https://images.igdb.com/igdb/image/upload/t_cover_big/mnljdjtrh44x4snmierh.jpg"),
                                     fit: BoxFit.cover,
@@ -171,7 +170,7 @@ class _MainScreenState extends State<MainScreen> {
                                 child: Align(
                                   alignment: Alignment.bottomCenter,
                                   child: ClipRRect(
-                                    borderRadius: BorderRadius.only(
+                                    borderRadius: const BorderRadius.only(
                                         bottomRight: Radius.circular(15),
                                         bottomLeft: Radius.circular(15)),
                                     child: Container(
@@ -183,7 +182,7 @@ class _MainScreenState extends State<MainScreen> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text(
+                                            const Text(
                                               "FarCry 6",
                                               style: TextStyle(
                                                   color: Colors.white),
@@ -209,7 +208,7 @@ class _MainScreenState extends State<MainScreen> {
               );
             },
           ),
-          Divider(
+          const Divider(
             color: Colors.grey,
           ),
           SingleChildScrollView(
@@ -220,7 +219,7 @@ class _MainScreenState extends State<MainScreen> {
                 children: [
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "All",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -232,12 +231,12 @@ class _MainScreenState extends State<MainScreen> {
                     selectedColor: Colors.deepPurple.shade700,
                     showCheckmark: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "PlayStation",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -249,12 +248,12 @@ class _MainScreenState extends State<MainScreen> {
                     selectedColor: Colors.deepPurple.shade700,
                     showCheckmark: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "Nintendo",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -266,12 +265,12 @@ class _MainScreenState extends State<MainScreen> {
                     selectedColor: Colors.deepPurple.shade700,
                     showCheckmark: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "X- Box",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -283,12 +282,12 @@ class _MainScreenState extends State<MainScreen> {
                     selectedColor: Colors.deepPurple.shade700,
                     showCheckmark: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "PC",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -300,12 +299,12 @@ class _MainScreenState extends State<MainScreen> {
                     selectedColor: Colors.deepPurple.shade700,
                     showCheckmark: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "Steam",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -317,12 +316,12 @@ class _MainScreenState extends State<MainScreen> {
                     selectedColor: Colors.deepPurple.shade700,
                     showCheckmark: false,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 8,
                   ),
                   FilterChip(
                     backgroundColor: Colors.black54,
-                    label: Text(
+                    label: const Text(
                       "Stadia",
                       style: TextStyle(color: Colors.white),
                     ),
@@ -346,7 +345,7 @@ class _MainScreenState extends State<MainScreen> {
                 FilterChip(
                   backgroundColor: Colors.black54,
                   label: Row(
-                    children: [
+                    children:const [
                       Icon(
                         Icons.bolt,
                         color: Colors.grey,
@@ -366,13 +365,13 @@ class _MainScreenState extends State<MainScreen> {
                   selectedColor: Colors.deepPurple.shade700,
                   showCheckmark: false,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 FilterChip(
                   backgroundColor: Colors.black54,
                   label: Row(
-                    children: [
+                    children:const [
                       Icon(
                         Icons.bolt,
                         color: Colors.orange,
@@ -391,13 +390,13 @@ class _MainScreenState extends State<MainScreen> {
                   selectedColor: Colors.deepPurple.shade700,
                   showCheckmark: false,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 FilterChip(
                   backgroundColor: Colors.black54,
                   label: Row(
-                    children: [
+                    children:const [
                       Icon(
                         Icons.bolt,
                         color: Colors.grey,
@@ -416,13 +415,13 @@ class _MainScreenState extends State<MainScreen> {
                   selectedColor: Colors.deepPurple.shade700,
                   showCheckmark: false,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 FilterChip(
                   backgroundColor: Colors.black54,
                   label: Row(
-                    children: [
+                    children:const [
                       Icon(
                         Icons.bar_chart,
                         color: Colors.orange,
@@ -441,13 +440,13 @@ class _MainScreenState extends State<MainScreen> {
                   selectedColor: Colors.deepPurple.shade700,
                   showCheckmark: false,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 8,
                 ),
                 FilterChip(
                   backgroundColor: Colors.black54,
                   label: Row(
-                    children: [
+                    children:const [
                       Icon(
                         Icons.bolt,
                         color: Colors.orange,
@@ -495,7 +494,7 @@ class _MainScreenState extends State<MainScreen> {
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                     "https://images.igdb.com/igdb/image/upload/t_cover_big/em1y2ugcwy2myuhvb9db.jpg"),
                                 fit: BoxFit.fill,
@@ -504,7 +503,7 @@ class _MainScreenState extends State<MainScreen> {
                             child: Align(
                               alignment: Alignment.bottomCenter,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                     bottomRight: Radius.circular(19),
                                     bottomLeft: Radius.circular(19)),
                                 child: Container(
@@ -521,7 +520,7 @@ class _MainScreenState extends State<MainScreen> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text(
+                                            const Text(
                                               "FarCry 6",
                                               style: TextStyle(
                                                   color: Colors.white,
@@ -533,7 +532,7 @@ class _MainScreenState extends State<MainScreen> {
                                             )
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 5,
                                         ),
                                         Row(
@@ -557,7 +556,7 @@ class _MainScreenState extends State<MainScreen> {
                                                           .deepPurple.shade700,
                                                       size: 12,
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       "19 Feb 2021",
                                                       style: TextStyle(
                                                           fontSize: 9,
@@ -583,7 +582,7 @@ class _MainScreenState extends State<MainScreen> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment
                                                           .spaceBetween,
-                                                  children: [
+                                                  children:const [
                                                     Icon(
                                                       Icons.storm_outlined,
                                                       color: Colors.orange,
@@ -615,7 +614,7 @@ class _MainScreenState extends State<MainScreen> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment
                                                           .spaceBetween,
-                                                  children: [
+                                                  children:const [
                                                     Icon(
                                                       Icons
                                                           .calendar_month_outlined,
@@ -639,12 +638,12 @@ class _MainScreenState extends State<MainScreen> {
                                                       BorderRadius.circular(
                                                           15)),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 5,
                                             )
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 5,
                                         ),
                                         Container(
@@ -655,7 +654,7 @@ class _MainScreenState extends State<MainScreen> {
                                               mainAxisAlignment:
                                                   MainAxisAlignment
                                                       .spaceBetween,
-                                              children: [
+                                              children:const [
                                                 Icon(
                                                   Icons.label,
                                                   color: Colors.amber,
@@ -677,11 +676,11 @@ class _MainScreenState extends State<MainScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(15)),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 5,
                                         ),
                                         Row(
-                                          children: [
+                                          children:const [
                                             Text(
                                               "Download",
                                               style: TextStyle(
@@ -757,7 +756,7 @@ class _MainScreenState extends State<MainScreen> {
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 25,
                   ),
                   Stack(
@@ -770,7 +769,7 @@ class _MainScreenState extends State<MainScreen> {
                             decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(20),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                     "https://images.igdb.com/igdb/image/upload/t_cover_big/yektasaxw6l4ejte7ljb.jpg"),
                                 fit: BoxFit.fill,
@@ -779,9 +778,9 @@ class _MainScreenState extends State<MainScreen> {
                             child: Align(
                               alignment: Alignment.bottomCenter,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.only(
-                                    bottomRight: Radius.circular(19),
-                                    bottomLeft: Radius.circular(19)),
+                                borderRadius: const BorderRadius.only(
+                                    bottomRight:  Radius.circular(19),
+                                    bottomLeft:  Radius.circular(19)),
                                 child: Container(
                                   height: 111,
                                   color: Colors.grey[800],
@@ -796,7 +795,7 @@ class _MainScreenState extends State<MainScreen> {
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
-                                            Text(
+                                            const Text(
                                               "FarCry 6",
                                               style: TextStyle(
                                                   color: Colors.white,
@@ -808,7 +807,7 @@ class _MainScreenState extends State<MainScreen> {
                                             )
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 5,
                                         ),
                                         Row(
@@ -832,7 +831,7 @@ class _MainScreenState extends State<MainScreen> {
                                                           .deepPurple.shade700,
                                                       size: 12,
                                                     ),
-                                                    Text(
+                                                    const Text(
                                                       "19 Feb 2021",
                                                       style: TextStyle(
                                                           fontSize: 9,
@@ -858,7 +857,7 @@ class _MainScreenState extends State<MainScreen> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment
                                                           .spaceBetween,
-                                                  children: [
+                                                  children:const [
                                                     Icon(
                                                       Icons.storm_outlined,
                                                       color: Colors.orange,
@@ -890,7 +889,7 @@ class _MainScreenState extends State<MainScreen> {
                                                   mainAxisAlignment:
                                                       MainAxisAlignment
                                                           .spaceBetween,
-                                                  children: [
+                                                  children:const [
                                                     Icon(
                                                       Icons
                                                           .calendar_month_outlined,
@@ -914,12 +913,12 @@ class _MainScreenState extends State<MainScreen> {
                                                       BorderRadius.circular(
                                                           15)),
                                             ),
-                                            SizedBox(
+                                            const SizedBox(
                                               width: 5,
                                             )
                                           ],
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 5,
                                         ),
                                         Container(
@@ -930,7 +929,7 @@ class _MainScreenState extends State<MainScreen> {
                                               mainAxisAlignment:
                                                   MainAxisAlignment
                                                       .spaceBetween,
-                                              children: [
+                                              children:const [
                                                 Icon(
                                                   Icons.label,
                                                   color: Colors.amber,
@@ -952,11 +951,11 @@ class _MainScreenState extends State<MainScreen> {
                                               borderRadius:
                                                   BorderRadius.circular(15)),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 5,
                                         ),
                                         Row(
-                                          children: [
+                                          children:const [
                                             Text(
                                               "Download",
                                               style: TextStyle(
@@ -1036,7 +1035,7 @@ class _MainScreenState extends State<MainScreen> {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Padding(
@@ -1063,7 +1062,7 @@ class _MainScreenState extends State<MainScreen> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: NetworkImage(
                                   "https://images.igdb.com/igdb/image/upload/t_cover_big/co2iao.jpg"),
                               fit: BoxFit.fill,
@@ -1072,7 +1071,7 @@ class _MainScreenState extends State<MainScreen> {
                           child: Align(
                             alignment: Alignment.bottomCenter,
                             child: ClipRRect(
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                   bottomRight: Radius.circular(19),
                                   bottomLeft: Radius.circular(19)),
                               child: Container(
@@ -1089,9 +1088,9 @@ class _MainScreenState extends State<MainScreen> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text(
+                                          const Text(
                                             "FarCry 6",
-                                            style: TextStyle(
+                                            style:  TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold),
                                           ),
@@ -1101,7 +1100,7 @@ class _MainScreenState extends State<MainScreen> {
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Row(
@@ -1117,7 +1116,7 @@ class _MainScreenState extends State<MainScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
-                                                children: [
+                                                children:const [
                                                   Icon(
                                                     Icons
                                                         .calendar_month_outlined,
@@ -1149,7 +1148,7 @@ class _MainScreenState extends State<MainScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
-                                                children: [
+                                                children:const [
                                                   Icon(
                                                     Icons.storm_outlined,
                                                     color: Colors.orange,
@@ -1180,7 +1179,7 @@ class _MainScreenState extends State<MainScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
-                                                children: [
+                                                children:const [
                                                   Icon(
                                                     Icons
                                                         .calendar_month_outlined,
@@ -1203,12 +1202,12 @@ class _MainScreenState extends State<MainScreen> {
                                                 borderRadius:
                                                     BorderRadius.circular(15)),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 5,
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Container(
@@ -1218,7 +1217,7 @@ class _MainScreenState extends State<MainScreen> {
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,
-                                            children: [
+                                            children:const [
                                               Icon(
                                                 Icons.label,
                                                 color: Colors.amber,
@@ -1240,11 +1239,11 @@ class _MainScreenState extends State<MainScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(15)),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Row(
-                                        children: [
+                                        children:const [
                                           Text(
                                             "Download",
                                             style: TextStyle(
@@ -1320,7 +1319,7 @@ class _MainScreenState extends State<MainScreen> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 Stack(
@@ -1333,7 +1332,7 @@ class _MainScreenState extends State<MainScreen> {
                           decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(20),
-                            image: DecorationImage(
+                            image: const DecorationImage(
                               image: NetworkImage(
                                   "https://images.igdb.com/igdb/image/upload/t_cover_big/yektasaxw6l4ejte7ljb.jpg"),
                               fit: BoxFit.fill,
@@ -1342,7 +1341,7 @@ class _MainScreenState extends State<MainScreen> {
                           child: Align(
                             alignment: Alignment.bottomCenter,
                             child: ClipRRect(
-                              borderRadius: BorderRadius.only(
+                              borderRadius: const BorderRadius.only(
                                   bottomRight: Radius.circular(19),
                                   bottomLeft: Radius.circular(19)),
                               child: Container(
@@ -1359,9 +1358,9 @@ class _MainScreenState extends State<MainScreen> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text(
+                                          const Text(
                                             "FarCry 6",
-                                            style: TextStyle(
+                                            style:  TextStyle(
                                                 color: Colors.white,
                                                 fontWeight: FontWeight.bold),
                                           ),
@@ -1371,7 +1370,7 @@ class _MainScreenState extends State<MainScreen> {
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Row(
@@ -1387,7 +1386,7 @@ class _MainScreenState extends State<MainScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
-                                                children: [
+                                                children:const [
                                                   Icon(
                                                     Icons
                                                         .calendar_month_outlined,
@@ -1419,7 +1418,7 @@ class _MainScreenState extends State<MainScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
-                                                children: [
+                                                children:const [
                                                   Icon(
                                                     Icons.storm_outlined,
                                                     color: Colors.orange,
@@ -1450,7 +1449,7 @@ class _MainScreenState extends State<MainScreen> {
                                                 mainAxisAlignment:
                                                     MainAxisAlignment
                                                         .spaceBetween,
-                                                children: [
+                                                children: const[
                                                   Icon(
                                                     Icons
                                                         .calendar_month_outlined,
@@ -1473,12 +1472,12 @@ class _MainScreenState extends State<MainScreen> {
                                                 borderRadius:
                                                     BorderRadius.circular(15)),
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 5,
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Container(
@@ -1488,7 +1487,7 @@ class _MainScreenState extends State<MainScreen> {
                                           child: Row(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.spaceBetween,
-                                            children: [
+                                            children:const [
                                               Icon(
                                                 Icons.label,
                                                 color: Colors.amber,
@@ -1510,11 +1509,11 @@ class _MainScreenState extends State<MainScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(15)),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 5,
                                       ),
                                       Row(
-                                        children: [
+                                        children:const [
                                           Text(
                                             "Download",
                                             style: TextStyle(
